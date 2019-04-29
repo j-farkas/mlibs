@@ -1,0 +1,11 @@
+@using FriendLetter.Models;
+<!DOCTYPE html>
+<html>
+<h1>MadLibs</h1>
+
+
+
+@if (Model.GetNext() == 0){ <p>@Model.GetWord() he said @Model.GetWord() as he jumped into his convertible</p>
+<p>@Model.GetWord() and drove off with his @Model.GetWord() Husband</p> }else{ <p>@Model.GetWord()! @Model.GetWord(), he jumped into his convertible</p>
+<p>@Model.GetWord() and drove off leaving his @Model.GetWord() Wife behind</p> }
+</html>
